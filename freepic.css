@@ -1,0 +1,63 @@
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: #eae2e2;
+    font-family: Arial, sans-serif;
+}
+.container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.button-row {
+    display: flex;
+    justify-content: space-between;
+    gap: 40px;
+}
+
+.button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 200px;
+    height: 50px;
+    color: white;
+    font-size: 15px;
+    position: relative;
+    border-radius:0;
+    box-shadow: 0 6px 10px rgba(8, 8, 8, 0.1);
+    transform: skewx(-30deg)
+
+}
+
+.circle {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 50px;
+    width: 47px;
+    background-color: white;
+    border: none;
+    border-radius: 0px;
+    transform: scale(1);
+    box-shadow: 15px 0px 0px 0px rgba(10, 10, 10, 0.1);
+   
+}
+
+.button.activate { background-color: #007b8a; }
+.button.download { background-color: #0f6250; }/*
+.button.support { background-color: #ffa500; }
+.button.settings { background-color: #7b00a8; }
+.button.home { background-color: #00a878; }
+.button.share { background-color: #4c83ff; }
+.button.profile { background-color: #ff5733; }
+.button.security { background-color: #887ba8; }
+.button.likes { background-color: #1c406e; }
+.button.volume { background-color: #5e0412; }
+.button.bookmark { background-color: #ffbf00; }
+.button.overview { background-color: #007b8a; }*/
+.button:hover {
+    transform: scale(1);
+}
